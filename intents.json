@@ -1,0 +1,103 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
+         "responses": ["Hello, thanks for asking", "Good to see you again", "Hi there, how can I help?"],
+         "context": [""]
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+         "context": [""]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"],
+         "context": [""]
+        },
+        {"tag": "noanswer",
+         "patterns": [],
+         "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+         "context": [""]
+        },
+        {"tag": "options",
+         "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
+         "responses": ["I can guide you through finding restaurants, grocery stores, weather"],
+         "context": [""]
+	},
+	{"tag": "response_rest",
+	 "patterns": ["Restaurants near me", "Find restaurants", "Restarurants open near me", "Restaurants", "Restaurant"],
+	 "responses": ["Please follow the link: https://www.google.com/search?q=restaurants+near+me&rlz=1C1CHBF_enUS878US878&oq=restaurants+near+me&aqs=chrome..69i57.7665j0j1&sourceid=chrome&ie=UTF-8"],
+	 "context": [""]
+	},
+	{"tag": "error_1",
+	 "patterns": ["Restaurnt", "restauranat" , "resturnt", "resurant"],
+	 "responses": ["Do you mean restaurant? Results for restaurant :   https://www.google.com/search?q=restaurants+near+me&rlz=1C1CHBF_enUS878US878&oq=restaurants+near+me&aqs=chrome..69i57.7665j0j1&sourceid=chrome&ie=UTF-8 "],
+	 "context": [""]
+	}, 
+	{"tag": "response_groc",
+	 "patterns": ["Grocery store near me", "Find grocery stores", "Find grocery store","Grocery store open near me", "Grocery", "Grocery stores"],
+	 "responses": ["Please follow the link: https://www.google.com/search?q=grocery+store+near+me&rlz=1C1CHBF_enUS878US878&oq=grocery+s&aqs=chrome.1.0l2j69i57j0l5.2226j0j7&sourceid=chrome&ie=UTF-8"],
+	 "context": [""]
+	},
+	{"tag": "error_2",
+	 "patterns": ["grocerystore", "grocry" , "grocry store", "grocery stre"],
+	 "responses": ["Do you mean grocery store? Results for grocery store:  https://www.google.com/search?q=grocery+store+near+me&rlz=1C1CHBF_enUS878US878&oq=grocery+s&aqs=chrome.1.0l2j69i57j0l5.2226j0j7&sourceid=chrome&ie=UTF-8"],
+	 "context": [""]
+	}, 
+	{"tag": "response_weather",
+	 "patterns": ["Weather", "Current Weather", "weather near me", "Today's weather", "How is the weather", "What is the temperature", "Today's temperature"],
+	 "responses": ["Please follow the link: https://www.google.com/search?q=weather&rlz=1C1CHBF_enUS878US878&oq=weather&aqs=chrome..69i57j69i60l3.3012j0j9&sourceid=chrome&ie=UTF-8"],
+	 "context": [""]
+	},
+	{"tag": "error_3",
+	 "patterns": ["Weathr", "waether" , "Current waether", "weathr"],
+	 "responses": ["Do you mean weather? Results for current weather :   https://www.google.com/search?q=weather&rlz=1C1CHBF_enUS878US878&oq=weather&aqs=chrome..69i57j69i60l3.3012j0j9&sourceid=chrome&ie=UTF-8"],
+	 "context": [""]
+	}, 
+	{"tag": "turing",
+	 "patterns": ["Alan Turing", "Who is Alan Turing" , "Who was Alan Turing", "About Alan Turing"],
+	 "responses": ["Alan Turing was a brilliant British mathematician who took a leading role in breaking Nazi ciphers during WWII. In his seminal 1936 paper, he proved that there cannot exist any universal algorithmic method of determining truth in mathematics, and that mathematics will always contain undecidable propositions. His work is widely acknowledged as foundational research of computer science and artificial intelligence. "],
+	 "context": [""]
+	}, 
+	{"tag": "chatbot_about",
+	 "patterns": ["What is a chatbot","About Chatbot","Chatbot"],
+	 "responses": ["A chatbot is a software application used to conduct an on-line chat conversation via text or text-to-speech, in lieu of providing direct contact with a live human agent. Designed to convincingly simulate the way a human would behave as a conversational partner, chatbot systems typically require continuous tuning and testing, and many in production remain unable to adequately converse or pass the industry standard Turing test.The term 'ChatterBot' was originally coined by Michael Mauldin (creator of the first Verbot) in 1994 to describe these conversational programs."],
+	 "context": [""]
+	},
+	{"tag": "ML_about",
+	 "patterns": ["Machine Learning","What is Machine Learning","About Machine Learning","What is ML","ML","About ML"],
+	 "responses": ["Machine learning is an application of artificial intelligence (AI) that provides systems the ability to automatically learn and improve from experience without being explicitly programmed. Machine learning focuses on the development of computer programs that can access data and use it learn for themselves.The process of learning begins with observations or data, such as examples, direct experience, or instruction, in order to look for patterns in data and make better decisions in the future based on the examples that we provide. The primary aim is to allow the computers learn automatically without human intervention or assistance and adjust actions accordingly."],
+	 "context": [""]
+	},
+	{"tag": "name_ask",
+	 "patterns": ["Who are you","What is your name","My name is Vignesh"],
+	 "responses": ["My name is Chatbot AI here to help"],
+	 "context": [""]
+	},
+	{"tag": "queries",
+	 "patterns": ["Whats up","Wassup","Ssup","How do you do?"],
+	 "responses": ["I am great, always happy to help"],
+	 "context": [""]
+	},
+	{"tag": "questions_imp",
+	 "patterns": ["Are you a robot"],
+	 "responses": ["No I am chatbot, but I am happy you asked"],
+	 "context": [""]
+	},
+	{"tag": "questions_2",
+	 "patterns": ["Do you know Siri","Do you know Google Assistant","Do you know Alexa"],
+	 "responses": ["Yep, she is a much more complicated version of me. I am just a novice"],
+	 "context": [""]
+	},
+	{"tag": "abt_1",
+	 "patterns": ["Do you have feelings","Can you feel","Can you feel emotions"],
+	 "responses": ["No I don't, but I can hurt yours xD"],
+	 "context": [""]
+	},
+	{"tag": "movie_star",
+	 "patterns": ["Favourite superstar","Who is your favourite superstar","Which actor is your favourite"],
+	 "responses": ["Katappa from the movie Bahubali :P"],
+	 "context": [""]
+	}
+   ]
+}
